@@ -1,0 +1,40 @@
+{
+    "name": "oro-flex/config",
+    "description": "`Oro Config Component` provides additional resource types to `Symfony Config Component` infrastructure responsibles for loading configurations from different data sources and optionally monitoring these data sources for changes.",
+    "homepage": "https://github.com/oroinc/platform/tree/master/src/Oro/Component/Config",
+    "license": "MIT",
+    "authors": [
+	    {
+            "name": "Nikita Makarov",
+            "email": "mesaverde228@gmail.com"
+        },
+        {
+            "name": "Oro, Inc",
+            "homepage": "https://oroinc.com/"
+        }
+    ],
+    "require": {
+        "php": "~7.4.14 || ~8.0.0"
+    },
+    "require-dev": {
+    },
+    "conflict": {
+        "oro/platform": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "symfony": {
+            "require": "4.4.*"
+        },
+        "branch-alias": {
+            "dev-master": "4.2-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Oro\\Component\\Config\\": ""
+        },
+        "exclude-from-classmap": ["/Tests/"]
+    }
+}
